@@ -4,7 +4,7 @@
 		module="forms"
 		revision="1.3.0"
 		status="release"
-		publication="20130203170042"
+		publication="20130203222120"
 		default="true"
 	/>
 	<configurations>

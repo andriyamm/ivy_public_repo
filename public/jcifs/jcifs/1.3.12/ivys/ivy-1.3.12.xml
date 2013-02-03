@@ -4,7 +4,7 @@
 		module="jcifs"
 		revision="1.3.12"
 		status="release"
-		publication="20130203170038"
+		publication="20130203222115"
 		default="true"
 	/>
 	<configurations>

@@ -49,6 +49,16 @@
 					overwrite = "true"
 					haltonfailure = "yes"
 					transitive="true"/>
+					
+		<ivy:install settingsRef="repo.settings"
+					organisation="commons-transaction"
+					module="commons-transaction"
+					revision="1.1"
+					from="local-resolver"
+					to="public-repo-resolver"
+					overwrite = "true"
+					haltonfailure = "yes"
+					transitive="true"/>
 
 		<ivy:install settingsRef="repo.settings"
 					organisation="jcifs"
@@ -101,11 +111,121 @@
 					haltonfailure = "yes"
 					transitive="true" />
 					
+		
+		<ivy:install settingsRef="repo.settings"
+					organisation="javax.security"
+					module="jacc"
+					revision="1.0"
+					from="local-resolver"
+					to="public-repo-resolver"
+					overwrite = "true"
+					haltonfailure = "yes"/>
+						
+		<ivy:install settingsRef="repo.settings"
+					organisation="javax.transaction"
+					module="jta"
+					revision="1.0.1B"
+					from="local-resolver"
+					to="public-repo-resolver"
+					overwrite = "true"
+					haltonfailure = "yes"/>
+		
+		<ivy:install settingsRef="repo.settings"
+					organisation="hsqldb"
+					module="hsqldb"
+					revision="1.8.0"
+					from="local-resolver"
+					to="public-repo-resolver"
+					overwrite = "true"
+					haltonfailure = "yes"/>
+					
+		<ivy:install settingsRef="repo.settings"
+					organisation="javax.activation"
+					module="activation"
+					revision="1.0.2"
+					from="local-resolver"
+					to="public-repo-resolver"
+					overwrite = "true"
+					haltonfailure = "yes"/>
+					
+		<ivy:install settingsRef="repo.settings"
+					organisation="javax.mail"
+					module="mail"
+					revision="1.3.2"
+					from="local-resolver"
+					to="public-repo-resolver"
+					overwrite = "true"
+					haltonfailure = "yes"/>
+					
+		<ivy:install settingsRef="repo.settings"
+					organisation="javax.resource"
+					module="connector"
+					revision="1.0"
+					from="local-resolver"
+					to="public-repo-resolver"
+					overwrite = "true"
+					haltonfailure = "yes"/>
+					
+	<!--	<ivy:install settingsRef="repo.settings"
+					organisation="javax.persistence"
+					module="ejb"
+					revision="3.0-edr2-20050513"
+					from="ibiblio"
+					to="public-repo-resolver"
+					overwrite = "true"
+						haltonfailure = "yes"/> -->
+					
+		<ivy:install settingsRef="repo.settings"
+					organisation="com.oracle.toplink"
+					module="toplink"
+					revision="10.1.3"
+					from="local-resolver"
+					to="public-repo-resolver"
+					overwrite = "true"
+					haltonfailure = "yes"/>
+					
+		<!-- <ivy:install settingsRef="repo.settings"
+					organisation="jdo"
+					module="jdo"
+					revision="1.0.1"
+					from="ibiblio"
+					to="public-repo-resolver"
+					overwrite = "true"
+						haltonfailure = "yes"/> -->
+					
+		<ivy:install settingsRef="repo.settings"
+					organisation="javax.jms"
+					module="jms"
+					revision="1.1"
+					from="local-resolver"
+					to="public-repo-resolver"
+					overwrite = "true"
+					haltonfailure = "yes"/>
+
+		<ivy:install settingsRef="repo.settings"
+					organisation="javax.ejb"
+					module="ejb"
+					revision="2.0"
+					from="local-resolver"
+					to="public-repo-resolver"
+					overwrite = "true"
+					haltonfailure = "yes"/>
+					
+		<ivy:install settingsRef="repo.settings"
+					organisation="javax.faces"
+					module="jsf-api"
+					revision="1.1"
+					from="local-resolver"
+					to="public-repo-resolver"
+					overwrite = "true"
+					haltonfailure = "yes"/>
+					
+					
 		<ivy:install settingsRef="repo.settings"
 					organisation="org.springframework"
 					module="spring"
 					revision="1.2.7"
-					from="ibiblio"
+					from="local-resolver"
 					to="public-repo-resolver"
 					overwrite = "true"
 					haltonfailure = "yes"
