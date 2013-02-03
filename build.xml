@@ -4,9 +4,12 @@
 		
 	<target name = "create-public-repo" >
 		<property name="dest.dir" value="${repodir}" />
+		<property name="temp.dir" value="${tempdir}" />
+		
 		<ivy:settings id="repo.settings" file="public-repo-settings.xml"/>
 		
 		<ivy:cleancache/>
+		
 		<ivy:install settingsRef="repo.settings"
 					organisation="org.apache.commons"
 					module="commons-lang3"
@@ -48,6 +51,27 @@
 					transitive="true"/>
 
 		<ivy:install settingsRef="repo.settings"
+					organisation="jcifs"
+					module="jcifs"
+					revision="1.3.17"
+					from="ibiblio"
+					to="public-repo-resolver"
+					overwrite = "true"
+					haltonfailure = "yes"
+					transitive="true"/>
+		
+		<!-- needs for compability with jtds-1.2.7 -->
+		<ivy:install settingsRef="repo.settings"
+					organisation="jcifs"
+					module="jcifs"
+					revision="1.3.12"
+					from="local-resolver"
+					to="public-repo-resolver"
+					overwrite = "true"
+					haltonfailure = "yes"
+					transitive="true"/> 
+						
+		<ivy:install settingsRef="repo.settings"
 					organisation="net.sourceforge.jtds"
 					module="jtds"
 					revision="1.2.7"
@@ -56,13 +80,22 @@
 					overwrite = "true"
 					haltonfailure = "yes"
 					transitive="true"/>
-        
+	
+		<ivy:install settingsRef="repo.settings"
+					organisation="com.jgoodies"
+					module="forms"
+					revision="1.7.1"
+					from="local-resolver"
+					to="public-repo-resolver"
+					overwrite = "true"
+					haltonfailure = "yes"
+					transitive="true" />
 					
 		<ivy:install settingsRef="repo.settings"
 					organisation="com.jgoodies"
 					module="forms"
 					revision="1.3.0"
-					from="ibiblio"
+					from="local-resolver"
 					to="public-repo-resolver"
 					overwrite = "true"
 					haltonfailure = "yes"
@@ -70,7 +103,7 @@
 					
 		<ivy:install settingsRef="repo.settings"
 					organisation="org.springframework"
-					module="spring-core"
+					module="spring"
 					revision="1.2.7"
 					from="ibiblio"
 					to="public-repo-resolver"

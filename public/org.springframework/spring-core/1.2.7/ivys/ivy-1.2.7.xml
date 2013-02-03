@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.springframework"
+		module="spring-core"
+		revision="1.2.7"
+		status="release"
+		publication="20060510070359"
+	>
+		<description homepage="" />
+		<m:dependency.management__com.ibatis__ibatis-sqlmap__version>1.3.1</m:dependency.management__com.ibatis__ibatis-sqlmap__version>
+		<m:dependency.management__easymock__easymock__version>1.2_Java1.3</m:dependency.management__easymock__easymock__version>
+		<m:dependency.management__itext__itext__version>1.3</m:dependency.management__itext__itext__version>
+		<m:dependency.management__oro__oro__version>2.0.8</m:dependency.management__oro__oro__version>
+		<m:dependency.management__taglibs__standard__version>1.0.6</m:dependency.management__taglibs__standard__version>
+		<m:dependency.management__javax.xml__jaxrpc-api__version>1.1</m:dependency.management__javax.xml__jaxrpc-api__version>
+		<m:dependency.management__cglib__cglib__version>2.1_3</m:dependency.management__cglib__cglib__version>
+		<m:dependency.management__commons-httpclient__commons-httpclient__version>3.0</m:dependency.management__commons-httpclient__commons-httpclient__version>
+		<m:dependency.management__javax.servlet__servlet-api__scope>provided</m:dependency.management__javax.servlet__servlet-api__scope>
+		<m:dependency.management__c3p0__c3p0__version>0.9.0.4</m:dependency.management__c3p0__c3p0__version>
+		<m:dependency.management__javax.resource__connector__version>1.0</m:dependency.management__javax.resource__connector__version>
+		<m:dependency.management__log4j__log4j__version>1.2.13</m:dependency.management__log4j__log4j__version>
+		<m:dependency.management__velocity__velocity__version>1.4</m:dependency.management__velocity__velocity__version>
+		<m:dependency.management__net.sourceforge.jexcelapi__jxl__version>2.5.7</m:dependency.management__net.sourceforge.jexcelapi__jxl__version>
+		<m:dependency.management__com.servlets__cos__version>05Nov2002</m:dependency.management__com.servlets__cos__version>
+		<m:dependency.management__struts__struts__version>1.2.8</m:dependency.management__struts__struts__version>
+		<m:dependency.management__velocity-tools__velocity-tools-view__version>1.2</m:dependency.management__velocity-tools__velocity-tools-view__version>
+		<m:dependency.management__org.hibernate__hibernate-annotations__version>3.0beta2</m:dependency.management__org.hibernate__hibernate-annotations__version>
+		<m:dependency.management__commons-logging__commons-logging__version>1.0.4</m:dependency.management__commons-logging__commons-logging__version>
+		<m:dependency.management__com.ibatis__ibatis2-sqlmap__version>2.1.7.597</m:dependency.management__com.ibatis__ibatis2-sqlmap__version>
+		<m:dependency.management__com.experlog__xapool__version>1.5.0</m:dependency.management__com.experlog__xapool__version>
+		<m:dependency.management__com.oracle.toplink__toplink__version>10.1.3</m:dependency.management__com.oracle.toplink__toplink__version>
+		<m:dependency.management__com.caucho__burlap__version>2.1.12</m:dependency.management__com.caucho__burlap__version>
+		<m:dependency.management__javax.servlet__jsp-api__scope>provided</m:dependency.management__javax.servlet__jsp-api__scope>
+		<m:dependency.management__xdoclet__xjavadoc__version>1.1</m:dependency.management__xdoclet__xjavadoc__version>
+		<m:dependency.management__javax.faces__jsf-api__version>1.1</m:dependency.management__javax.faces__jsf-api__version>
+		<m:dependency.management__velocity-tools__velocity-tools-generic__version>1.2</m:dependency.management__velocity-tools__velocity-tools-generic__version>
+		<m:dependency.management__commons-lang__commons-lang__version>2.1</m:dependency.management__commons-lang__commons-lang__version>
+		<m:dependency.management__javax.ejb__ejb__version>2.0</m:dependency.management__javax.ejb__ejb__version>
+		<m:dependency.management__jotm__jotm__version>2.0.10</m:dependency.management__jotm__jotm__version>
+		<m:dependency.management__commons-attributes__commons-attributes-compiler__version>2.1</m:dependency.management__commons-attributes__commons-attributes-compiler__version>
+		<m:dependency.management__javax.servlet__servlet-api__version>2.4</m:dependency.management__javax.servlet__servlet-api__version>
+		<m:dependency.management__poi__poi__version>2.5.1-final-20040804</m:dependency.management__poi__poi__version>
+		<m:dependency.management__xml-apis__xml-apis__version>1.0.b2</m:dependency.management__xml-apis__xml-apis__version>
+		<m:dependency.management__commons-collections__commons-collections__version>3.1</m:dependency.management__commons-collections__commons-collections__version>
+		<m:dependency.management__jasperreports__jasperreports__version>1.0.3</m:dependency.management__jasperreports__jasperreports__version>
+		<m:dependency.management__javax.transaction__jta__version>1.0.1B</m:dependency.management__javax.transaction__jta__version>
+		<m:dependency.management__com.jamonapi__jamon__version>1.0</m:dependency.management__com.jamonapi__jamon__version>
+		<m:dependency.management__xml-apis__xml-apis__scope>provided</m:dependency.management__xml-apis__xml-apis__scope>
+		<m:dependency.management__struts__struts__exclusion_0>servletapi__servletapi</m:dependency.management__struts__struts__exclusion_0>
+		<m:dependency.management__easymock__easymock__scope>test</m:dependency.management__easymock__easymock__scope>
+		<m:dependency.management__javax.mail__mail__version>1.3.2</m:dependency.management__javax.mail__mail__version>
+		<m:maven.plugins>org.apache.maven.plugins__maven-compiler-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null</m:maven.plugins>
+		<m:dependency.management__net.sf.hibernate__hibernate__version>2.1.8</m:dependency.management__net.sf.hibernate__hibernate__version>
+		<m:dependency.management__ojb__db-ojb__version>1.0.4</m:dependency.management__ojb__db-ojb__version>
+		<m:dependency.management__javax.servlet__jstl__version>1.0</m:dependency.management__javax.servlet__jstl__version>
+		<m:dependency.management__aopalliance__aopalliance__version>1.0</m:dependency.management__aopalliance__aopalliance__version>
+		<m:dependency.management__org.hibernate__hibernate__version>3.0.5</m:dependency.management__org.hibernate__hibernate__version>
+		<m:dependency.management__javax.jdo__jdo__version>2.0-20050809.1515</m:dependency.management__javax.jdo__jdo__version>
+		<m:dependency.management__quartz__quartz__version>1.5.1</m:dependency.management__quartz__quartz__version>
+		<m:dependency.management__commons-pool__commons-pool__version>1.2</m:dependency.management__commons-pool__commons-pool__version>
+		<m:dependency.management__com.caucho__hessian__version>2.1.12</m:dependency.management__com.caucho__hessian__version>
+		<m:dependency.management__javax.servlet__jsp-api__version>2.0</m:dependency.management__javax.servlet__jsp-api__version>
+		<m:dependency.management__freemarker__freemarker__version>2.3.4</m:dependency.management__freemarker__freemarker__version>
+		<m:dependency.management__javax.jms__jms__version>1.1</m:dependency.management__javax.jms__jms__version>
+		<m:dependency.management__ehcache__ehcache__version>1.1</m:dependency.management__ehcache__ehcache__version>
+		<m:dependency.management__commons-dbcp__commons-dbcp__version>1.2.1</m:dependency.management__commons-dbcp__commons-dbcp__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="spring-core" type="jar" ext="jar" conf="master"/>
+		<artifact name="spring-core" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+	</publications>
+	<dependencies>
+		<dependency org="commons-logging" name="commons-logging" rev="1.0.4" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="log4j" name="log4j" rev="1.2.13" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="commons-collections" name="commons-collections" rev="3.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="javax.servlet" name="servlet-api" rev="2.4" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="xml-apis" name="xml-apis" rev="1.0.b2" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="junit" name="junit" rev="3.8.1" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="javax.mail" module="mail" matcher="exact" rev="1.3.2"/>
+		<override org="poi" module="poi" matcher="exact" rev="2.5.1-final-20040804"/>
+		<override org="org.hibernate" module="hibernate" matcher="exact" rev="3.0.5"/>
+		<override org="velocity-tools" module="velocity-tools-generic" matcher="exact" rev="1.2"/>
+		<override org="commons-collections" module="commons-collections" matcher="exact" rev="3.1"/>
+		<override org="javax.faces" module="jsf-api" matcher="exact" rev="1.1"/>
+		<override org="taglibs" module="standard" matcher="exact" rev="1.0.6"/>
+		<override org="org.hibernate" module="hibernate-annotations" matcher="exact" rev="3.0beta2"/>
+		<override org="javax.servlet" module="jsp-api" matcher="exact" rev="2.0"/>
+		<override org="quartz" module="quartz" matcher="exact" rev="1.5.1"/>
+		<override org="javax.jms" module="jms" matcher="exact" rev="1.1"/>
+		<override org="commons-pool" module="commons-pool" matcher="exact" rev="1.2"/>
+		<override org="xml-apis" module="xml-apis" matcher="exact" rev="1.0.b2"/>
+		<override org="jasperreports" module="jasperreports" matcher="exact" rev="1.0.3"/>
+		<override org="javax.xml" module="jaxrpc-api" matcher="exact" rev="1.1"/>
+		<override org="com.oracle.toplink" module="toplink" matcher="exact" rev="10.1.3"/>
+		<override org="com.ibatis" module="ibatis2-sqlmap" matcher="exact" rev="2.1.7.597"/>
+		<override org="oro" module="oro" matcher="exact" rev="2.0.8"/>
+		<override org="com.experlog" module="xapool" matcher="exact" rev="1.5.0"/>
+		<override org="c3p0" module="c3p0" matcher="exact" rev="0.9.0.4"/>
+		<override org="commons-logging" module="commons-logging" matcher="exact" rev="1.0.4"/>
+		<override org="jotm" module="jotm" matcher="exact" rev="2.0.10"/>
+		<override org="com.jamonapi" module="jamon" matcher="exact" rev="1.0"/>
+		<override org="net.sourceforge.jexcelapi" module="jxl" matcher="exact" rev="2.5.7"/>
+		<override org="ojb" module="db-ojb" matcher="exact" rev="1.0.4"/>
+		<override org="commons-httpclient" module="commons-httpclient" matcher="exact" rev="3.0"/>
+		<override org="cglib" module="cglib" matcher="exact" rev="2.1_3"/>
+		<override org="javax.servlet" module="servlet-api" matcher="exact" rev="2.4"/>
+		<override org="com.ibatis" module="ibatis-sqlmap" matcher="exact" rev="1.3.1"/>
+		<override org="struts" module="struts" matcher="exact" rev="1.2.8"/>
+		<override org="easymock" module="easymock" matcher="exact" rev="1.2_Java1.3"/>
+		<override org="freemarker" module="freemarker" matcher="exact" rev="2.3.4"/>
+		<override org="ehcache" module="ehcache" matcher="exact" rev="1.1"/>
+		<override org="javax.transaction" module="jta" matcher="exact" rev="1.0.1B"/>
+		<override org="javax.servlet" module="jstl" matcher="exact" rev="1.0"/>
+		<override org="commons-dbcp" module="commons-dbcp" matcher="exact" rev="1.2.1"/>
+		<override org="com.caucho" module="hessian" matcher="exact" rev="2.1.12"/>
+		<override org="aopalliance" module="aopalliance" matcher="exact" rev="1.0"/>
+		<override org="javax.jdo" module="jdo" matcher="exact" rev="2.0-20050809.1515"/>
+		<override org="itext" module="itext" matcher="exact" rev="1.3"/>
+		<override org="com.servlets" module="cos" matcher="exact" rev="05Nov2002"/>
+		<override org="log4j" module="log4j" matcher="exact" rev="1.2.13"/>
+		<override org="commons-attributes" module="commons-attributes-compiler" matcher="exact" rev="2.1"/>
+		<override org="commons-lang" module="commons-lang" matcher="exact" rev="2.1"/>
+		<override org="velocity-tools" module="velocity-tools-view" matcher="exact" rev="1.2"/>
+		<override org="xdoclet" module="xjavadoc" matcher="exact" rev="1.1"/>
+		<override org="velocity" module="velocity" matcher="exact" rev="1.4"/>
+		<override org="net.sf.hibernate" module="hibernate" matcher="exact" rev="2.1.8"/>
+		<override org="javax.ejb" module="ejb" matcher="exact" rev="2.0"/>
+		<override org="com.caucho" module="burlap" matcher="exact" rev="2.1.12"/>
+		<override org="javax.resource" module="connector" matcher="exact" rev="1.0"/>
+	</dependencies>
+</ivy-module>
