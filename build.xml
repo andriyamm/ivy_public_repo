@@ -2,23 +2,61 @@
 	
 	<property file="build.properties" />
 		
-	<target name = "create-public-repo" >
+	<target name = "create-public-repo-for-secret-octo-hipster" >
 		<property name="dest.dir" value="${repodir}" />
 		<property name="temp.dir" value="${tempdir}" />
 		
 		<ivy:settings id="repo.settings" file="public-repo-settings.xml"/>
 		
 		<ivy:cleancache/>
-		
+<!--	
+	ivy:install
+	=============================================================================================
+	Attribute	  | Description	                                                   | Required
+	=============================================================================================
+	from	      | the name of the resolver in which the module must be found	   | Yes
+	---------------------------------------------------------------------------------------------
+	to	          | the name of the resolver in which the module must be installed | Yes
+	---------------------------------------------------------------------------------------------
+	organisation  | the name of the organisation of the module to install	       | Yes
+	---------------------------------------------------------------------------------------------
+	module	      | the name of the module to install	                           | Yes
+	---------------------------------------------------------------------------------------------
+	branch	      | the branch of the module to install since 2.0	               | No, defaults to default branch with exact matcher, '*' with any other matcher
+	---------------------------------------------------------------------------------------------
+	revision	  | the revision of the module to install	                       | Yes
+	---------------------------------------------------------------------------------------------
+	type	      | the type(s) of artefact(s) to install. You can give multiple   | No, defaults to '*' meaning all types
+				  |  values separated by commas	                                   |
+	---------------------------------------------------------------------------------------------
+	conf	      | the configurations to install. Only the dependencies of the    | No, defaults to '*' meaning all configurations
+				  |specified configurations will be installed. since 2.3	       | 
+	---------------------------------------------------------------------------------------------
+	validate	  | true to force ivy files validation against ivy.xsd, false to    | No. Defaults to default ivy value (as configured in configuration file)
+				  |  force no validation	
+	---------------------------------------------------------------------------------------------
+	overwrite	  | true to override modules already present in the destination     | No, defaults to false
+				  | resolver, false otherwise	
+	---------------------------------------------------------------------------------------------
+	transitive	  | true to install the module and all its transitive dependencies, | No, defaults to false
+				  | false to install only the module	
+	---------------------------------------------------------------------------------------------
+	matcher	      | the name of the matcher to use to find the modules to install	| No, defaults to exact
+	---------------------------------------------------------------------------------------------
+	settingsRef	  | A reference to the ivy settings that must be used               | No, 'ivy.instance' is taken by default.
+				  | by this task (since 2.0)	
+	---------------------------------------------------------------------------------------------
+	haltonfailure |true to fail build on unresolved dependencies since 2.0	        | No, defaults to true
+	---------------------------------------------------------------------------------------------
+-->
 		<ivy:install settingsRef="repo.settings"
 					organisation="org.apache.commons"
 					module="commons-lang3"
 					revision="3.1"
-					from="ibiblio"
+					from="ibiblio"   
 					to="public-repo-resolver"
-					overwrite = "true"
 					haltonfailure = "yes"
-					transitive="true"/>
+					transitive="false"/>
 		
 		<ivy:install settingsRef="repo.settings"
 					organisation="commons-dbcp"
@@ -26,9 +64,8 @@
 					revision="1.4"
 					from="ibiblio"
 					to="public-repo-resolver"
-					overwrite = "true"
 					haltonfailure = "yes"
-					transitive="true"/>
+					transitive="false"/>
 					
 		<ivy:install settingsRef="repo.settings"
 					organisation="commons-pool"
@@ -36,9 +73,8 @@
 					revision="1.6"
 					from="ibiblio"
 					to="public-repo-resolver"
-					overwrite = "true"
 					haltonfailure = "yes"
-					transitive="true"/>
+					transitive="false"/>
 					
 		<ivy:install settingsRef="repo.settings"
 					organisation="commons-logging"
@@ -46,50 +82,17 @@
 					revision="1.1.1"
 					from="ibiblio"
 					to="public-repo-resolver"
-					overwrite = "true"
 					haltonfailure = "yes"
-					transitive="true"/>
+					transitive="false"/>
 					
-		<ivy:install settingsRef="repo.settings"
-					organisation="commons-transaction"
-					module="commons-transaction"
-					revision="1.1"
-					from="local-resolver"
-					to="public-repo-resolver"
-					overwrite = "true"
-					haltonfailure = "yes"
-					transitive="true"/>
-
-		<ivy:install settingsRef="repo.settings"
-					organisation="jcifs"
-					module="jcifs"
-					revision="1.3.17"
-					from="ibiblio"
-					to="public-repo-resolver"
-					overwrite = "true"
-					haltonfailure = "yes"
-					transitive="true"/>
-		
-		<!-- needs for compability with jtds-1.2.7 -->
-		<ivy:install settingsRef="repo.settings"
-					organisation="jcifs"
-					module="jcifs"
-					revision="1.3.12"
-					from="local-resolver"
-					to="public-repo-resolver"
-					overwrite = "true"
-					haltonfailure = "yes"
-					transitive="true"/> 
-						
 		<ivy:install settingsRef="repo.settings"
 					organisation="net.sourceforge.jtds"
 					module="jtds"
 					revision="1.2.7"
 					from="ibiblio"
 					to="public-repo-resolver"
-					overwrite = "true"
 					haltonfailure = "yes"
-					transitive="true"/>
+					transitive="false"/>
 	
 		<ivy:install settingsRef="repo.settings"
 					organisation="com.jgoodies"
@@ -97,9 +100,8 @@
 					revision="1.7.1"
 					from="local-resolver"
 					to="public-repo-resolver"
-					overwrite = "true"
 					haltonfailure = "yes"
-					transitive="true" />
+					transitive="false" />
 					
 		<ivy:install settingsRef="repo.settings"
 					organisation="com.jgoodies"
@@ -107,130 +109,19 @@
 					revision="1.3.0"
 					from="local-resolver"
 					to="public-repo-resolver"
-					overwrite = "true"
 					haltonfailure = "yes"
-					transitive="true" />
-					
-		
-		<ivy:install settingsRef="repo.settings"
-					organisation="javax.security"
-					module="jacc"
-					revision="1.0"
-					from="local-resolver"
-					to="public-repo-resolver"
-					overwrite = "true"
-					haltonfailure = "yes"/>
-						
-		<ivy:install settingsRef="repo.settings"
-					organisation="javax.transaction"
-					module="jta"
-					revision="1.0.1B"
-					from="local-resolver"
-					to="public-repo-resolver"
-					overwrite = "true"
-					haltonfailure = "yes"/>
-		
-		<ivy:install settingsRef="repo.settings"
-					organisation="hsqldb"
-					module="hsqldb"
-					revision="1.8.0"
-					from="local-resolver"
-					to="public-repo-resolver"
-					overwrite = "true"
-					haltonfailure = "yes"/>
-					
-		<ivy:install settingsRef="repo.settings"
-					organisation="javax.activation"
-					module="activation"
-					revision="1.0.2"
-					from="local-resolver"
-					to="public-repo-resolver"
-					overwrite = "true"
-					haltonfailure = "yes"/>
-					
-		<ivy:install settingsRef="repo.settings"
-					organisation="javax.mail"
-					module="mail"
-					revision="1.3.2"
-					from="local-resolver"
-					to="public-repo-resolver"
-					overwrite = "true"
-					haltonfailure = "yes"/>
-					
-		<ivy:install settingsRef="repo.settings"
-					organisation="javax.resource"
-					module="connector"
-					revision="1.0"
-					from="local-resolver"
-					to="public-repo-resolver"
-					overwrite = "true"
-					haltonfailure = "yes"/>
-					
-	<!--	<ivy:install settingsRef="repo.settings"
-					organisation="javax.persistence"
-					module="ejb"
-					revision="3.0-edr2-20050513"
-					from="ibiblio"
-					to="public-repo-resolver"
-					overwrite = "true"
-						haltonfailure = "yes"/> -->
-					
-		<ivy:install settingsRef="repo.settings"
-					organisation="com.oracle.toplink"
-					module="toplink"
-					revision="10.1.3"
-					from="local-resolver"
-					to="public-repo-resolver"
-					overwrite = "true"
-					haltonfailure = "yes"/>
-					
-		<!-- <ivy:install settingsRef="repo.settings"
-					organisation="jdo"
-					module="jdo"
-					revision="1.0.1"
-					from="ibiblio"
-					to="public-repo-resolver"
-					overwrite = "true"
-						haltonfailure = "yes"/> -->
-					
-		<ivy:install settingsRef="repo.settings"
-					organisation="javax.jms"
-					module="jms"
-					revision="1.1"
-					from="local-resolver"
-					to="public-repo-resolver"
-					overwrite = "true"
-					haltonfailure = "yes"/>
-
-		<ivy:install settingsRef="repo.settings"
-					organisation="javax.ejb"
-					module="ejb"
-					revision="2.0"
-					from="local-resolver"
-					to="public-repo-resolver"
-					overwrite = "true"
-					haltonfailure = "yes"/>
-					
-		<ivy:install settingsRef="repo.settings"
-					organisation="javax.faces"
-					module="jsf-api"
-					revision="1.1"
-					from="local-resolver"
-					to="public-repo-resolver"
-					overwrite = "true"
-					haltonfailure = "yes"/>
-					
+					transitive="false" />
 					
 		<ivy:install settingsRef="repo.settings"
 					organisation="org.springframework"
 					module="spring"
 					revision="1.2.7"
-					from="local-resolver"
+					from="ibiblio"
 					to="public-repo-resolver"
-					overwrite = "true"
 					haltonfailure = "yes"
-					transitive="true" />
+					transitive="false" />
 					
  		<ivy:cleancache/>
     </target>
+	
 </project>
