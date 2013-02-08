@@ -15,10 +15,10 @@
 		<m:properties__commons.osgi.symbolicName>org.apache.commons.${commons.componentid}</m:properties__commons.osgi.symbolicName>
 		<m:properties__project.reporting.outputEncoding>${commons.encoding}</m:properties__project.reporting.outputEncoding>
 		<m:properties__commons.rc.version>RC1</m:properties__commons.rc.version>
-		<m:properties__commons.osgi.export>org.apache.commons.*;version=${pom.version}</m:properties__commons.osgi.export>
 		<m:properties__commons.componentid>dbcp</m:properties__commons.componentid>
 		<m:properties__maven.compile.target>1.6</m:properties__maven.compile.target>
 		<m:properties__commons.docEncoding>${commons.encoding}</m:properties__commons.docEncoding>
+		<m:properties__commons.osgi.export>org.apache.commons.*;version=${pom.version}</m:properties__commons.osgi.export>
 		<m:properties__commons.deployment.protocol>scp</m:properties__commons.deployment.protocol>
 		<m:properties__maven.compile.source>1.6</m:properties__maven.compile.source>
 		<m:properties__commons.jira.pid>12310469</m:properties__commons.jira.pid>

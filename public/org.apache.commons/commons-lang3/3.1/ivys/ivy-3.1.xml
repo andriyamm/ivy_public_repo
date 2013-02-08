@@ -15,16 +15,16 @@
 		<m:properties__commons.binary.suffix>-bin</m:properties__commons.binary.suffix>
 		<m:properties__commons.jira.id>LANG</m:properties__commons.jira.id>
 		<m:properties__commons.release.desc>(Java 5.0+)</m:properties__commons.release.desc>
-		<m:properties__organization.logo>http://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
 		<m:properties__commons.osgi.symbolicName>org.apache.commons.${commons.componentid}</m:properties__commons.osgi.symbolicName>
+		<m:properties__organization.logo>http://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
 		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
 		<m:properties__commons.rc.version>RC1</m:properties__commons.rc.version>
 		<m:properties__commons.clirr.version>2.3</m:properties__commons.clirr.version>
 		<m:properties__commons.componentid>lang3</m:properties__commons.componentid>
 		<m:properties__commons.docEncoding>${commons.encoding}</m:properties__commons.docEncoding>
 		<m:properties__commons.osgi.export>org.apache.commons.*;version=${project.version};-noimport:=true</m:properties__commons.osgi.export>
-		<m:properties__commons.javadoc.java.link>http://download.oracle.com/javase/6/docs/api/</m:properties__commons.javadoc.java.link>
 		<m:properties__commons.deployment.protocol>scp</m:properties__commons.deployment.protocol>
+		<m:properties__commons.javadoc.java.link>http://download.oracle.com/javase/6/docs/api/</m:properties__commons.javadoc.java.link>
 		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
 		<m:properties__commons.jira.pid>12310481</m:properties__commons.jira.pid>
 		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
